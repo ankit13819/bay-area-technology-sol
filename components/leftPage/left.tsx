@@ -7,15 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-const Left: React.FC = () => {
-  const [boardData, setBoardData] = useState<any[]>([]);
-  useEffect(() => {
-    //fetching boards data
-    fetch("https://demo6396395.mockable.io/bcf-boards")
-      .then((response) => response.json())
-      .then((data) => setBoardData(data.boards))
-      .catch((error) => console.log("Error Fetching Data from Board", error));
-  }, []);
+const Left: React.FC = ({ boardData }) => {
   return (
     <div className="main-card">
       {boardData.map((item) => (
