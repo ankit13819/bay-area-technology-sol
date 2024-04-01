@@ -6,7 +6,7 @@ const Header: React.FC = () => {
       <nav style={{ display: "flex", alignItems: "center" }}>
         <Image
           src="/bay.png"
-          alt="zoundify image"
+          alt="bay area"
           width={200}
           height={60}
           style={{
