@@ -7,10 +7,15 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-const Left: React.FC = ({ boardData }) => {
+
+interface Props {
+  boardData: any;
+}
+
+const Left: React.FC<Props> = ({ boardData }) => {
   return (
     <div className="main-card">
-      {boardData.map((item) => (
+      {boardData.map((item: any) => (
         <Card className="card" key={item.id}>
           <CardHeader>
             <CardTitle>{boardData[0].bcfs[0].name}</CardTitle>
