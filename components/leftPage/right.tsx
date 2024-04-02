@@ -8,7 +8,7 @@ const Right: React.FC<Props> = ({ promptData }) => {
   return (
     <div className="main-card">
       {promptData.map((item: any) => (
-        <Card className="card" key={item.id}>
+        <Card className="card newcard" key={item.id}>
           <CardHeader>
             <CardTitle>{item.name}</CardTitle>
           </CardHeader>

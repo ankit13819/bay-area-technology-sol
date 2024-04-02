@@ -20,16 +20,16 @@ const Left: React.FC<Props> = ({ boardData }) => {
           <CardHeader>
             <CardTitle>{boardData[0].bcfs[0].name}</CardTitle>
             <CardContent>
-              <CardDescription>
+              <CardDescription className="card-content">
                 {boardData[0].bcfs[0].bcfBoards[0].name}
               </CardDescription>
-              <CardDescription>
+              <CardDescription className="card-content">
                 {boardData[0].bcfs[0].bcfBoards[1].name}
               </CardDescription>
             </CardContent>
             <CardTitle>{boardData[0].bcfs[1].name}</CardTitle>
             <CardContent>
-              <CardDescription>
+              <CardDescription className="card-content">
                 {boardData[0].bcfs[1].bcfBoards[0].name}
               </CardDescription>
             </CardContent>

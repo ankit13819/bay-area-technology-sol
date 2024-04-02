@@ -87,13 +87,17 @@
 }
 
 /* Mobile responsive */
-@media screen and (min-width: 768px) {
-  .main-card {
-    width: 50%;
-    margin: 20px;
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 335px;
+  }
+  .newcard {
+    width: 175px;
+  }
+  .card-content {
+    font-size: 20px;
   }
 }
-
 .loading-spinner-container {
   display: flex;
   align-items: center;
